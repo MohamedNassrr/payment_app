@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:payments_app/core/utils/app_router.dart';
 import 'package:payments_app/core/utils/assets_data.dart';
 import 'package:payments_app/core/widgets/custom_button.dart';
 import 'package:payments_app/features/checkout/presentation/views/widgets/order_info_item.dart';
+import 'package:payments_app/features/checkout/presentation/views/widgets/payment_methode_bottom_sheet.dart';
 import 'package:payments_app/features/checkout/presentation/views/widgets/total_price_item.dart';
 
 class MyCartViewBody extends StatelessWidget {
@@ -57,8 +56,17 @@ class MyCartViewBody extends StatelessWidget {
           CustomButton(
             title: 'Complete Payment',
             onPressed: () {
-              GoRouter.of(context).push(
-                AppRouter.kPaymentView,
+              // GoRouter.of(context).push(
+              //   AppRouter.kPaymentView,
+              // );
+              showBottomSheet(
+                  context: context,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16)
+                  ),
+                  builder: (context)  {
+                    return const PaymentMethodeBottomSheet();
+                  }
               );
             },
           ),
@@ -70,3 +78,4 @@ class MyCartViewBody extends StatelessWidget {
     );
   }
 }
+

@@ -10,13 +10,13 @@ class TotalPriceItem extends StatelessWidget {
       children: [
         Text(
           'Total',
-          style: Styles.style18,
+          style: Styles.style24,
           textAlign: TextAlign.center,
         ),
         Spacer(),
         Text(
           r'$50.97',
-          style: Styles.style18,
+          style: Styles.style24,
           textAlign: TextAlign.center,
         ),
       ],
