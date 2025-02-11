@@ -19,13 +19,13 @@ class PaymentMethodItem extends StatelessWidget {
       height: 62,
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
-          side:  BorderSide(
+          side: BorderSide(
             width: 1.50,
             color: isActive ? const Color(0xff34A853) : Colors.grey,
           ),
           borderRadius: BorderRadius.circular(15),
         ),
-        shadows:  [
+        shadows: [
           BoxShadow(
             color: isActive ? const Color(0xff34A853) : Colors.white,
             blurRadius: 4,

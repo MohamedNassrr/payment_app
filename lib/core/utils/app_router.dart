@@ -4,14 +4,14 @@ import 'package:payments_app/features/checkout/presentation/views/payment_detail
 import 'package:payments_app/features/checkout/presentation/views/thank_you_view.dart';
 
 abstract class AppRouter {
-
+  static const kMayCartView = '/';
   static const kPaymentView = '/PaymentDetailsView';
   static const kThankYouView = '/ThankYouView';
 
   static final router = GoRouter(
     routes: [
       GoRoute(
-        path: '/',
+        path: kMayCartView,
         builder: (context, state) => const MyCartView(),
       ),
       GoRoute(

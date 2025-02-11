@@ -17,14 +17,13 @@ class _PaymentDetailBodyState extends State<PaymentDetailBody> {
 
   @override
   Widget build(BuildContext context) {
-    return   CustomScrollView(
+    return CustomScrollView(
       slivers: [
         const SliverToBoxAdapter(
           child: PaymentMethodListView(),
         ),
         const SliverToBoxAdapter(
-          child: CustomCreditCard(
-          ),
+          child: CustomCreditCard(),
         ),
         SliverFillRemaining(
           child: Align(
@@ -37,7 +36,7 @@ class _PaymentDetailBodyState extends State<PaymentDetailBody> {
               ),
               child: CustomButton(
                 title: 'Pay',
-                onPressed: (){
+                onPressed: () {
                   GoRouter.of(context).push(AppRouter.kThankYouView);
                 },
               ),

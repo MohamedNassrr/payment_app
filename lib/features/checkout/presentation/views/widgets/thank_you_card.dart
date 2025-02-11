@@ -20,7 +20,7 @@ class ThankYouCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
       ),
-      child:  Padding(
+      child: Padding(
         padding: const EdgeInsets.only(top: 50 + 16, left: 22, right: 22),
         child: Column(
           children: [
@@ -65,7 +65,7 @@ class ThankYouCard extends StatelessWidget {
             const CardInfoWidget(),
             const Spacer(),
             Row(
-               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Icon(
                   FontAwesomeIcons.barcode,
@@ -101,6 +101,3 @@ class ThankYouCard extends StatelessWidget {
     );
   }
 }
-
-
-

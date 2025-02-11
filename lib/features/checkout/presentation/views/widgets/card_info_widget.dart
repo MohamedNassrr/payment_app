@@ -24,30 +24,25 @@ class CardInfoWidget extends StatelessWidget {
           const SizedBox(
             height: 23,
           ),
-          const Text.rich(
-              TextSpan(
-                  children: [
-                    TextSpan(
-                      text: 'Credit Card ',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w400,
-                          height: 0
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'Mastercard **78',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                        fontFamily: 'Inter',
-                      ),
-                    ),
-                  ]
-              )
-          ),
+          const Text.rich(TextSpan(children: [
+            TextSpan(
+              text: 'Credit Card ',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontFamily: 'Inter',
+                  fontWeight: FontWeight.w400,
+                  height: 0),
+            ),
+            TextSpan(
+              text: 'Mastercard **78',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 16,
+                fontFamily: 'Inter',
+              ),
+            ),
+          ])),
         ],
       ),
     );

@@ -10,7 +10,7 @@ class CustomDashedLine extends StatelessWidget {
     return Row(
       children: List.generate(
         35,
-            (index) => Expanded(
+        (index) => Expanded(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 1),
             child: Container(
