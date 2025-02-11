@@ -15,10 +15,10 @@ abstract class Styles {
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle style20 = TextStyle(
+  static TextStyle style20 = const TextStyle(
     fontSize: 20.0,
     fontFamily: 'Inter',
-    color: Colors.black.withOpacity(0.800000011920929),
+    color: Colors.black,
     fontWeight: FontWeight.w400,
   );
 
